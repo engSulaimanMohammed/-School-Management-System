@@ -1,5 +1,6 @@
 package org.example.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Student extends Person {
@@ -12,7 +13,42 @@ public class Student extends Person {
                    String GradeLevel, String RegistrationDate, double FeeBalance  ) {
 
         super(Id, FirstName, LastName, Gender, PhoneNumber);
+        setfeeBalance(FeeBalance); // To check The balance if less than 0 or above.
+        this.GradeLevel = GradeLevel;
+        this.RegistrationDate = RegistrationDate;
+        this.Subjects = new ArrayList<>();
+
     }
 
+    public String getGradeLevel() {
+        return GradeLevel;
+    }
 
+    public void setGradeLevel(String gradeLevel) {
+        GradeLevel = gradeLevel;
+    }
+
+    public String getRegistrationDate() {
+        return RegistrationDate;
+    }
+
+    public void setRegistrationDate(String registrationDate) {
+        RegistrationDate = registrationDate;
+    }
+
+    public double getFeeBalance() {
+        return FeeBalance;
+    }
+
+    public void setFeeBalance(double feeBalance) {
+        FeeBalance = feeBalance;
+    }
+
+    public List<String> getSubjects() {
+        return Subjects;
+    }
+
+    public void setSubjects(List<String> subjects) {
+        Subjects = subjects;
+    }
 }
