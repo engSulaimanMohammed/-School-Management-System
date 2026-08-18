@@ -29,5 +29,10 @@ public class SeniorStudent extends Student{
         this.GPA = GPA;
     }
 
-
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        IO.println("Senior Student: " + getFirstName() + " " + getLastName()
+        + "| Major: " + Major + " | GPA: " + GPA);
+    }
 }
