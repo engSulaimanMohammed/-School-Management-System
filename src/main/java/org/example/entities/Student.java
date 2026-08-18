@@ -12,7 +12,7 @@ public class Student extends Person {
     public Student(String Id, String FirstName, String LastName, String Gender, String PhoneNumber,
                    String GradeLevel, String RegistrationDate, double FeeBalance  ) {
 
-        super(Id, FirstName, LastName, Gender, PhoneNumber);
+        super(Id, FirstName, LastName, Gender, PhoneNumber, );
         setfeeBalance(FeeBalance); // To check The balance if less than 0 or above.
         this.GradeLevel = GradeLevel;
         this.RegistrationDate = RegistrationDate;
