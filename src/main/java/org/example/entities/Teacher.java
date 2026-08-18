@@ -36,6 +36,11 @@ public class Teacher extends Person {
     }
 
     public void setYearsOfExperience(int yearsOfExperience) {
+        if (YearsOfExperience < 0) {
+            IO.println("The Experience can be not 0. keep it at 0.");
+            this.YearsOfExperience = 0;
+            return;
+        }
         YearsOfExperience = yearsOfExperience;
     }
 
