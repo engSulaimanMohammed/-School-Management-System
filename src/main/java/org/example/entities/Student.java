@@ -51,4 +51,11 @@ public class Student extends Person {
     public void setSubjects(List<String> subjects) {
         Subjects = subjects;
     }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        IO.println("Student: " + getFirstName() + " " + getLastName()
+                + " | Grade: " + GradeLevel + " | FeeBalance: " + FeeBalance);
+    }
 }
