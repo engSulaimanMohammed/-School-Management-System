@@ -9,7 +9,7 @@ public class SeniorStudent extends Student{
 
         super(Id, FirstName, LastName, Gender, PhoneNumber, GradeLevel, RegistrationDate,
                 FeeBalance, GradeLevel, RegistrationDate, FeeBalance);
-        Major = major;
+        this.Major = major;
         this.GPA = GPA;
     }
 
