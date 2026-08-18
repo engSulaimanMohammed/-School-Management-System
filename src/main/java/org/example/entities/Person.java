@@ -94,7 +94,12 @@ public class Person implements Displayable {
         return Objects.equals(Id, person.Id);
     }
 
-    /*@Override
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(Id);
+    }
+
+   /*@Override
     public int hashCode() {
         return Objects.hashCode(Id);
     }*/
