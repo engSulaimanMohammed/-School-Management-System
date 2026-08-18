@@ -41,8 +41,15 @@ public class Student extends Person {
     }
 
     public void setFeeBalance(double feeBalance) {
+        if (FeeBalance < 0) {
+            IO.println("Fee Balance can not be bellow 0.");
+            this.FeeBalance = 0;
+            return;
+        }
         FeeBalance = feeBalance;
     }
+
+
 
     public List<String> getSubjects() {
         return Subjects;
